@@ -32,7 +32,7 @@ class BigDecimal {
     }
 
     public function setScale($scale, $rounding) {
-        return new BigDecimal($this->bd->withScale($scale, $rounding));
+        return new BigDecimal($this->bd->toScale($scale, $rounding));
     }
 
     public function add($other) {
